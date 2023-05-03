@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Calcula tu promedio fácil!!</h1>
+        <div class="form-row">
+            <div class="col ">
+                <input type="number" name="grade" id="grade" class="grade input" placeholder="Nota" min="0" max="5">
+            </div>
+            <div class="col ">
+                <input type="number" name="percentage" id="percentage" class="percentage input" placeholder="Porcentaje" min="1" max="100">
+            </div>
+            <div class="col ">
+                <button id="plus" class="add"><span class="material-symbols-outlined">add</span></button>
+            </div>
+        </div>
+        <table id="table" class="table display-none">
+            <thead>
+                <tr>
+                    <th>Nota</th>
+                    <th>Porcentaje</th> 
+                </tr>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            <tfoot id="tfoot">
+        
+            </tfoot>
+        </table>
+        
+        <div class="buttonBox">
+            <button id="calculate" class="calculate display-none">Calcular</button>
+            <button id="clear" class="clear display-none">Reset</button>
+        </div>
+    
+        <div id="result" class="result display-none">
+    
+        </div>
+    </div>
+    <script src="js/notas.js"></script>
+</body>
+</html>
