@@ -59,6 +59,7 @@ calculate.addEventListener("click", ()=>{
 clear.addEventListener("click", () => {
     gradeArray = [];
     tbody.querySelectorAll("*").forEach((child) => child.remove());
+    result.querySelectorAll("*").forEach((child) => child.remove());
     if (tfoot.querySelector("tr") !== null) {
       tfoot.querySelector("tr").remove();
     }
